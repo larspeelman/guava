@@ -55,7 +55,7 @@ final class Absent<T> extends Optional<T> {
   }
 
   @Override
-  public T or(Supplier<? extends T> supplier) {
+  public T2 or(Supplier<? extends T> supplier) {
     return checkNotNull(
         supplier.get(), "use Optional.orNull() instead of a Supplier that returns null");
   }
